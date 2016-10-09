@@ -1,0 +1,1 @@
+json.partial! "bunches/bunch", bunch: @bunch

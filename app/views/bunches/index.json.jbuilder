@@ -1,0 +1,1 @@
+json.array! @bunches, partial: 'bunches/bunch', as: :bunch

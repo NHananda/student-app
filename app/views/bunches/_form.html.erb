@@ -1,0 +1,22 @@
+<%= form_for(bunch) do |f| %>
+  <% if bunch.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bunch.errors.count, "error") %> prohibited this bunch from being saved:</h2>
+
+      <ul>
+      <% bunch.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
